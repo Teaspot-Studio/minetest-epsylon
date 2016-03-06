@@ -4,5 +4,5 @@ stages:
 push-mirror:
   stage: mirror
   script:
-    - git remote add github git@github.com:Teaspot-Studio/minetest-epsylon.git
+    - git remote add github git@github.com:Teaspot-Studio/minetest-epsylon.git || true
     - git push github $(git rev-parse --abbrev-ref HEAD) -u
