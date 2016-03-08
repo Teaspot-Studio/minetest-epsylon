@@ -5,6 +5,6 @@ push-mirror:
   stage: mirror
   script:
     - git clone --mirror git@git.teaspotstudio.ru:aerospace/minetest-epsylon.git
-    - cd minetest-epsylon
+    - cd minetest-epsylon.git
     - git push --mirror git@github.com:Teaspot-Studio/minetest-epsylon.git
     - cd .. && rm -rf mintest-epsylon
