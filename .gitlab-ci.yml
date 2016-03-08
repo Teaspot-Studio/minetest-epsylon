@@ -5,5 +5,5 @@ push-mirror:
   stage: mirror
   script:
     - git remote rm github || true
-    - git remote add --mirror github git@github.com:Teaspot-Studio/minetest-epsylon.git || true
+    - git remote add github git@github.com:Teaspot-Studio/minetest-epsylon.git || true
     - git push --mirror github
