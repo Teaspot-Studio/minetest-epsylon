@@ -6,4 +6,4 @@ push-mirror:
   script:
     - git remote rm github || true
     - git remote add github git@github.com:Teaspot-Studio/minetest-epsylon.git || true
-    - git push --mirror github
+    - git push github $CI_BUILD_REF_NAME
